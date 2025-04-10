@@ -51,7 +51,7 @@ class CartViewModel with ChangeNotifier {
       'Discount': discount,
       'ImageUrl': imageUrl,
       'Quantity': 1,
-      'DiscountPrice': discountedPrice * 100,
+      'DiscountPrice': discountedPrice * 10,
     });
     _calculateTotal();
     notifyListeners();

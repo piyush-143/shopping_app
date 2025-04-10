@@ -32,7 +32,7 @@ class UiHelper {
     required double price,
     required double discount,
   }) {
-    double discountedPrice = (price - ((price * discount) / 100)) * 100;
+    double discountedPrice = (price - ((price * discount) / 100)) * 10;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -48,7 +48,7 @@ class UiHelper {
           spacing: 5,
           children: [
             customText(
-              text: "₹${(price * 100).toStringAsFixed(2)}",
+              text: "₹${(price * 10).toStringAsFixed(2)}",
               size: 8,
               textDecoration: TextDecoration.lineThrough,
               color: Colors.black45,
